@@ -25,7 +25,7 @@
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < books.length; count++) { %>
-                  <%if (books[count].Title == ""){%>
+                  <%if (books[count].Title == ""){%> <!--if title is null, don't display it-->
                     <%continue;%>
                     <%}%>
                 <tr>
