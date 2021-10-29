@@ -25,6 +25,9 @@
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < books.length; count++) { %>
+                  <%if (books[count].Title == ""){%>
+                    <%continue;%>
+                    <%}%>
                 <tr>
                   <td><%= books[count].Title %></td>
                   <td class="text-center">$<%= books[count].Price %></td>
